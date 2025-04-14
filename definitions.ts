@@ -1,5 +1,17 @@
 const svgColor = "#FF6B6B";
 
+Blockly.Blocks['math_number'] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField(new Blockly.FieldNumber(0), 'NUM');
+      this.setOutput(true, 'Number');
+      this.setColour(230);
+      this.setTooltip("A number.");
+      this.setHelpUrl("");
+    }
+};
+
+  
 Blockly.Blocks['import_svg'] = {
     init: function() {
       this.appendDummyInput()

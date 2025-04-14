@@ -1,3 +1,9 @@
+Blockly.Python['math_number'] = function(block) {
+    var code = parseFloat(block.getFieldValue('NUM'));
+    var order = code < 0 ? Blockly.Python.ORDER_UNARY_SIGN : Blockly.Python.ORDER_ATOMIC;
+    return [code.toString(), order];
+};
+
 Blockly.Python['import_svg'] = function(block) {
     var code = 'from svg import SVGDrawing\n';
     return code;
