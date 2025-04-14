@@ -1,0 +1,182 @@
+<category name="SVG Drawing" colour="#FF6B6B" css-icon="customIcon fad fa-shapes">
+    <label text="SVG Drawing"></label>
+
+    <block type="import_svg"></block>
+
+    <block type="svg_init">
+        <value name="width">
+            <shadow type="math_number">
+                <field name="NUM">400</field>
+            </shadow>
+        </value>
+        <value name="height">
+            <shadow type="math_number">
+                <field name="NUM">300</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_draw_circle">
+        <value name="cx">
+            <shadow type="math_number">
+                <field name="NUM">100</field>
+            </shadow>
+        </value>
+        <value name="cy">
+            <shadow type="math_number">
+                <field name="NUM">100</field>
+            </shadow>
+        </value>
+        <value name="radius">
+            <shadow type="math_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_draw_rect">
+        <value name="x">
+            <shadow type="math_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+        <value name="y">
+            <shadow type="math_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+        <value name="width">
+            <shadow type="math_number">
+                <field name="NUM">100</field>
+            </shadow>
+        </value>
+        <value name="height">
+            <shadow type="math_number">
+                <field name="NUM">80</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_draw_triangle">
+        <value name="x1">
+            <shadow type="math_number">
+                <field name="NUM">100</field>
+            </shadow>
+        </value>
+        <value name="y1">
+            <shadow type="math_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+        <value name="x2">
+            <shadow type="math_number">
+                <field name="NUM">150</field>
+            </shadow>
+        </value>
+        <value name="y2">
+            <shadow type="math_number">
+                <field name="NUM">150</field>
+            </shadow>
+        </value>
+        <value name="x3">
+            <shadow type="math_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+        <value name="y3">
+            <shadow type="math_number">
+                <field name="NUM">150</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_draw_line">
+        <value name="x1">
+            <shadow type="math_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+        <value name="y1">
+            <shadow type="math_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+        <value name="x2">
+            <shadow type="math_number">
+                <field name="NUM">200</field>
+            </shadow>
+        </value>
+        <value name="y2">
+            <shadow type="math_number">
+                <field name="NUM">50</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_draw_text">
+        <value name="text">
+            <shadow type="text">
+                <field name="TEXT">Hello SVG!</field>
+            </shadow>
+        </value>
+        <value name="x">
+            <shadow type="math_number">
+                <field name="NUM">100</field>
+            </shadow>
+        </value>
+        <value name="y">
+            <shadow type="math_number">
+                <field name="NUM">100</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_set_style">
+        <value name="fill_color">
+            <shadow type="text">
+                <field name="TEXT">blue</field>
+            </shadow>
+        </value>
+        <value name="stroke_color">
+            <shadow type="text">
+                <field name="TEXT">black</field>
+            </shadow>
+        </value>
+        <value name="stroke_width">
+            <shadow type="math_number">
+                <field name="NUM">2</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_move">
+        <value name="dx">
+            <shadow type="math_number">
+                <field name="NUM">10</field>
+            </shadow>
+        </value>
+        <value name="dy">
+            <shadow type="math_number">
+                <field name="NUM">10</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_rotate">
+        <value name="angle">
+            <shadow type="math_number">
+                <field name="NUM">45</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_save">
+        <value name="filename">
+            <shadow type="text">
+                <field name="TEXT">drawing.svg</field>
+            </shadow>
+        </value>
+    </block>
+
+    <block type="svg_display"></block>
+</category>
