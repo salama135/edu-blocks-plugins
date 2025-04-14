@@ -1,0 +1,124 @@
+<category name="SVG Drawing" colour="#FF6B6B" css-icon="customIcon fad fa-shapes">
+    <label text="SVG Drawing"></label>
+    
+    <block type="svg_container">
+        <field name="width">400</field>
+        <field name="height">300</field>
+    </block>
+    
+    <block type="svg_circle">
+        <field name="cx">100</field>
+        <field name="cy">100</field>
+        <field name="radius">50</field>
+        <statement name="style">
+            <block type="svg_fill">
+                <field name="color">#3366ff</field>
+                <next>
+                    <block type="svg_stroke">
+                        <field name="color">#000000</field>
+                        <field name="width">2</field>
+                    </block>
+                </next>
+            </block>
+        </statement>
+    </block>
+    
+    <block type="svg_rect">
+        <field name="x">50</field>
+        <field name="y">50</field>
+        <field name="width">100</field>
+        <field name="height">50</field>
+        <statement name="style">
+            <block type="svg_fill">
+                <field name="color">#ff9900</field>
+                <next>
+                    <block type="svg_stroke">
+                        <field name="color">#000000</field>
+                        <field name="width">2</field>
+                    </block>
+                </next>
+            </block>
+        </statement>
+    </block>
+    
+    <block type="svg_triangle">
+        <field name="x1">100</field>
+        <field name="y1">50</field>
+        <field name="x2">150</field>
+        <field name="y2">150</field>
+        <field name="x3">50</field>
+        <field name="y3">150</field>
+        <statement name="style">
+            <block type="svg_fill">
+                <field name="color">#33cc33</field>
+                <next>
+                    <block type="svg_stroke">
+                        <field name="color">#000000</field>
+                        <field name="width">2</field>
+                    </block>
+                </next>
+            </block>
+        </statement>
+    </block>
+    
+    <block type="svg_line">
+        <field name="x1">50</field>
+        <field name="y1">50</field>
+        <field name="x2">200</field>
+        <field name="y2">50</field>
+        <statement name="style">
+            <block type="svg_stroke">
+                <field name="color">#000000</field>
+                <field name="width">3</field>
+            </block>
+        </statement>
+    </block>
+    
+    <block type="svg_text">
+        <field name="content">Hello SVG!</field>
+        <field name="x">100</field>
+        <field name="y">100</field>
+        <statement name="style">
+            <block type="svg_fill">
+                <field name="color">#000000</field>
+            </block>
+        </statement>
+    </block>
+    
+    <block type="svg_ellipse">
+        <field name="cx">100</field>
+        <field name="cy">100</field>
+        <field name="rx">70</field>
+        <field name="ry">40</field>
+        <statement name="style">
+            <block type="svg_fill">
+                <field name="color">#cc33cc</field>
+                <next>
+                    <block type="svg_stroke">
+                        <field name="color">#000000</field>
+                        <field name="width">2</field>
+                    </block>
+                </next>
+            </block>
+        </statement>
+    </block>
+    
+    <block type="svg_fill">
+        <field name="color">#3366ff</field>
+    </block>
+    
+    <block type="svg_stroke">
+        <field name="color">#000000</field>
+        <field name="width">2</field>
+    </block>
+    
+    <block type="svg_opacity">
+        <field name="opacity">0.8</field>
+    </block>
+    
+    <block type="svg_transform">
+        <field name="type">translate</field>
+        <field name="value1">10</field>
+        <field name="value2">10</field>
+    </block>
+</category>
